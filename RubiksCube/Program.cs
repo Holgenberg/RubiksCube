@@ -1137,10 +1137,10 @@ class Face
 	//Colors on my cube
 	static Face()
 	{
-		AddFaceColorMap(Front, "Front", ConsoleColor.BackGroundColor.Green, "w");
-		AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Grey, "y");
+		AddFaceColorMap(Front, "Front", ConsoleColor.BackGroundColor.Green, "g");
+		AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Grey, "w");
 		AddFaceColorMap(Up, "Up", ConsoleColor.BackGroundColor.Magenta, "p");
-		AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Yellow, "g");
+		AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Yellow, "y");
 		AddFaceColorMap(Down, "Down", ConsoleColor.BackGroundColor.Red, "r");
 		AddFaceColorMap(Back, "Back", ConsoleColor.BackGroundColor.Blue, "b");
 	}
