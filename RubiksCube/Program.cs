@@ -169,7 +169,7 @@ public class ConsoleColor : IDisposable
 		Green = 0x0002,
 		Cyan = 0x0003,
 		Red = 0x0004,
-		Magenta = 0x0005,
+		Orange = 0x00042,
 		Yellow = 0x0006,
 		Grey = 0x0007,
 		White = 0x0008
@@ -182,7 +182,7 @@ public class ConsoleColor : IDisposable
 		Green = 0x00020,
 		Cyan = 0x00030,
 		Red = 0x00040,
-		Magenta = 0x00050,
+		Orange = 0x00042,
 		Yellow = 0x00060,
 		Grey = 0x00070,
 		White = 0x00080
@@ -410,6 +410,7 @@ class Cube
 							int color = c.Trim()[0] - '0';
 							//map the color to what is on my cube
 							color = (int)Face.GetColorForFace((sbyte)color);
+
 							//set background color with intensity
 							using (new ConsoleColor(color | (int)ConsoleColor.BackGroundColor.White))
 							{
@@ -1140,7 +1141,7 @@ class Face
 		AddFaceColorMap(Front, "Front", ConsoleColor.BackGroundColor.Green, "g");
 		AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Red, "r");
 		AddFaceColorMap(Up, "Up", ConsoleColor.BackGroundColor.Grey, "w");
-		AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Magenta, "p");
+		AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Orange, "o");
 		AddFaceColorMap(Down, "Down", ConsoleColor.BackGroundColor.Yellow, "y");
 		AddFaceColorMap(Back, "Back", ConsoleColor.BackGroundColor.Blue, "b");
 	}
