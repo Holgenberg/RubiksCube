@@ -1138,10 +1138,10 @@ class Face
 	static Face()
 	{
 		AddFaceColorMap(Front, "Front", ConsoleColor.BackGroundColor.Green, "g");
-		AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Grey, "w");
-		AddFaceColorMap(Up, "Up", ConsoleColor.BackGroundColor.Magenta, "p");
-		AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Yellow, "y");
-		AddFaceColorMap(Down, "Down", ConsoleColor.BackGroundColor.Red, "r");
+		AddFaceColorMap(Right, "Right", ConsoleColor.BackGroundColor.Red, "r");
+		AddFaceColorMap(Up, "Up", ConsoleColor.BackGroundColor.Grey, "w");
+		AddFaceColorMap(Left, "Left", ConsoleColor.BackGroundColor.Magenta, "p");
+		AddFaceColorMap(Down, "Down", ConsoleColor.BackGroundColor.Yellow, "y");
 		AddFaceColorMap(Back, "Back", ConsoleColor.BackGroundColor.Blue, "b");
 	}
 	private static void AddFaceColorMap(sbyte face, string faceName, ConsoleColor.BackGroundColor color, string colorName)
